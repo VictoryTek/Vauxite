@@ -21,6 +21,10 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
+      - cosmic-desktop
+      - tmux
+      - gnome-session-xsession
+      - blivet-gui
       - micro
       - starship
     #remove:
@@ -34,7 +38,6 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.mozilla.firefox
         - org.gnome.Loupe
       remove:
         - org.gnome.eog
