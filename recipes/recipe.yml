@@ -37,9 +37,6 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - com.brave.Browser
-        - app.zen_browser.zen
-        - com.rustdesk.RustDesk
         - org.gnome.Loupe
       remove:
         - org.gnome.eog
