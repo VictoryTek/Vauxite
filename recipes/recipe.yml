@@ -38,12 +38,6 @@ modules:
       - waydroid
       - waydroid-selinux
 
-  - type: dnf
-    - source: system
-      remove:
-        - Sunshine
-        - clapper
-
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
