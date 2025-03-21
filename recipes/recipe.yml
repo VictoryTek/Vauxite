@@ -54,9 +54,14 @@ modules:
         - it.mijorus.gearlever                # Gearlever
         - io.github.shiftey.Desktop           # Github Desktop
         - io.missioncenter.MissionCenter      # Mission Center
+        - org.onlyoffice.desktopeditors       # Only Office
+        - org.prismlauncher.PrismLauncher     # Prism Launcher
+        - org.gnome.seahorse.Application      # Seahorse
         - app.zen_browser.zen                 # Zen Browser
         - com.rustdesk.RustDesk               # Rustdesk
         - org.gnome.Loupe                     # Image Viewer
+
+
 
       remove:
         - org.gnome.eog
