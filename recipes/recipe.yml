@@ -46,10 +46,16 @@ modules:
         - org.audacityteam.Audacity           # Audacity
         - com.bitwarden.desktop               # Bitwarden
         - io.github.dvlv.boxbuddyrs           # BoxBuddy
+        - org.gnome.Boxes                     # Boxes
         - com.brave.Browser                   # Brave Browser
+        - com.mattjakeman.ExtensionManager    # Extension Manager
+        - com.github.tchx84.Flatseal          # FlatSeal
+        - io.freetubeapp.FreeTube             # FreeTube
         - app.zen_browser.zen                 # Zen Browser
         - com.rustdesk.RustDesk
         - org.gnome.Loupe
+
+
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
