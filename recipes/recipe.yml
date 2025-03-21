@@ -29,6 +29,7 @@ modules:
       - micro
       - starship
       - tailscale
+      - cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -42,10 +43,12 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
+        - com.brave.Browser
+        - app.zen_browser.zen
+        - com.rustdesk.RustDesk
         - org.gnome.Loupe
       remove:
         - org.gnome.eog
-        - dev.lizardbyte.app.Sunshine
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
