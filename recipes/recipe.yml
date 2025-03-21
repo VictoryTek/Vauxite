@@ -53,15 +53,16 @@ modules:
         - io.freetubeapp.FreeTube             # FreeTube
         - it.mijorus.gearlever                # Gearlever
         - io.github.shiftey.Desktop           # Github Desktop
+        - org.gnome.TextEditor                # Gnome Text Editor
+        - org.gnome.Loupe                     # Image Viewer        
         - io.missioncenter.MissionCenter      # Mission Center
         - org.onlyoffice.desktopeditors       # Only Office
         - org.prismlauncher.PrismLauncher     # Prism Launcher
+        - com.rustdesk.RustDesk               # Rustdesk        
         - org.gnome.seahorse.Application      # Seahorse
+        - com.simplenote.Simplenote           # Simplenote
+        - dev.deedles.Trayscale               # Tray Scale
         - app.zen_browser.zen                 # Zen Browser
-        - com.rustdesk.RustDesk               # Rustdesk
-        - org.gnome.Loupe                     # Image Viewer
-
-
 
       remove:
         - org.gnome.eog
