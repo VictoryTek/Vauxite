@@ -38,13 +38,19 @@ modules:
       - waydroid
       - waydroid-selinux
 
+  - type: dnf5
+    remove:
+      - Sunshine
+      - clapper
+
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - com.brave.Browser
-        - app.zen_browser.zen
+        - com.bitwarden.desktop               # Bitwarden
+        - com.brave.Browser                   # Brave Browser
+        - app.zen_browser.zen                 # Zen Browser
         - com.rustdesk.RustDesk
         - org.gnome.Loupe
       remove:
