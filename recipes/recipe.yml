@@ -21,7 +21,7 @@ modules:
     repos:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
+      #- https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
     install:
       - tmux
       - gnome-session-xsession
@@ -29,14 +29,12 @@ modules:
       - micro
       - starship
       - tailscale
-      - cosmic-desktop
+      #- cosmic-desktop
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       #- firefox
       #- firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-      - clapper
-      - sunshine
       - waydroid
       - waydroid-selinux
 
