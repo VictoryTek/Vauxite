@@ -62,6 +62,9 @@ modules:
         - org.gnome.seahorse.Application      # Seahorse
         - com.simplenote.Simplenote           # Simplenote
         - dev.deedles.Trayscale               # Tray Scale
+        - com.github.unrud.VideoDownloader    # Video Downloader
+        - com.vscodium.codium                 # VS Codium
+        - io.github.flattool.Warehouse        # Warehouse
         - app.zen_browser.zen                 # Zen Browser
 
       remove:
