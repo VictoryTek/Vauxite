@@ -51,10 +51,12 @@ modules:
         - com.mattjakeman.ExtensionManager    # Extension Manager
         - com.github.tchx84.Flatseal          # FlatSeal
         - io.freetubeapp.FreeTube             # FreeTube
+        - it.mijorus.gearlever                # Gearlever
+        - io.github.shiftey.Desktop           # Github Desktop
+        - io.missioncenter.MissionCenter      # Mission Center
         - app.zen_browser.zen                 # Zen Browser
-        - com.rustdesk.RustDesk
-        - org.gnome.Loupe
-
+        - com.rustdesk.RustDesk               # Rustdesk
+        - org.gnome.Loupe                     # Image Viewer
 
       remove:
         - org.gnome.eog
