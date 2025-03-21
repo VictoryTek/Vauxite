@@ -43,7 +43,9 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
+        - org.audacityteam.Audacity           # Audacity
         - com.bitwarden.desktop               # Bitwarden
+        - io.github.dvlv.boxbuddyrs           # BoxBuddy
         - com.brave.Browser                   # Brave Browser
         - app.zen_browser.zen                 # Zen Browser
         - com.rustdesk.RustDesk
