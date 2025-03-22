@@ -37,6 +37,16 @@ modules:
       - waydroid
       - waydroid-selinux
 
+  - type: gnome-extensions
+    install:
+      - Dash to Dock
+      - Tiling Assistant
+      - Sound Input & Output Device Chooser
+      - Wallpaper Slideshow
+    remove:
+      - Hot Edge
+      - Logo Menu
+
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
