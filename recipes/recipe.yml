@@ -12,7 +12,8 @@ image-version: stable # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - my-wallpaper
+  - vauxite-wallpaper
+  
   - type: files
     files:
       - source: system
