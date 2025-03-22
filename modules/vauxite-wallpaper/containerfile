@@ -1,0 +1,10 @@
+# Copy wallpapers to the system backgrounds directory
+COPY files/wallpaper/vauxite-light.png /usr/share/backgrounds/vauxite-light.png
+COPY files/wallpaper/vauxite-dark.png /usr/share/backgrounds/vauxite-dark.png
+
+# Set default wallpapers for GNOME using dconf
+RUN mkdir -p /etc/dconf/db/local.d/ \
+    && echo "[org/gnome/desktop/background]" > /etc/dconf/db/local.d/00-wallpaper \
+    && echo "picture-uri='file:///usr/share/backgrounds/vauxite-light.png'" >> /etc/dconf/db/local.d/00-wallpaper \
+    && echo "picture-uri-dark='file:///usr/share/backgrounds/vauxite-dark.png'" >> /etc/dconf/db/local.d/00-wallpaper \
+    && dconf update
