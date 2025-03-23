@@ -1,5 +1,0 @@
-type: wallpapers
-source: local
-default:
-  wallpaper-light-dark:
-    - vauxite-light-v1.jxl + vauxite-dark-v1.jxl
