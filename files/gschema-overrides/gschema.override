@@ -1,0 +1,2 @@
+[org.gnome.shell]
+enabled-extensions=@as ['dash-to-dock@micxgx.gmail.com', 'azwallpaper@azwallpaper.gitlab.com']
