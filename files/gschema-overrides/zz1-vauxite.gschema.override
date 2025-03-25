@@ -4,3 +4,10 @@ favorite-apps=['io.github.zen_browser.zen.desktop', 'com.brave.Browser.desktop',
 
 [org.gnome.shell.extensions.dash-to-dock]
 dock-position='LEFT'
+
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/gnome-light-dark/vauxite-bb-light.jxl'
+picture-uri-dark='file:///usr/share/backgrounds/gnome-light-dark/vauxite-bb-dark.jxl'
+
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
