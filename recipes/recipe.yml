@@ -41,7 +41,7 @@ modules:
   - type: gnome-extensions
     install:
       - Dash to Dock
-      - Tiling Assistant
+      - Gnome 4x UI Improvements
       - Wallpaper Slideshow
     uninstall:
       - Hot Edge
@@ -78,6 +78,9 @@ modules:
 
       remove:
         - org.gnome.eog
+
+  - type: gschema-overrides
+
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
