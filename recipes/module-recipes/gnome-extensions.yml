@@ -1,0 +1,8 @@
+type: gnome-extensions
+install:
+  - Dash to Dock
+  - Gnome 4x UI Improvements
+  - Wallpaper Slideshow
+uninstall:
+  - Hot Edge
+  - Logo Menu
