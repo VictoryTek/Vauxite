@@ -17,69 +17,9 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-    install:
-      - tmux
-      - gnome-session-xsession
-      - blivet-gui
-      - micro
-      - starship
-      - flat-remix-icon-theme
-      - flat-remix-gtk4-theme
-
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      #- firefox
-      #- firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-      - waydroid
-      - waydroid-selinux
-
-  - type: gnome-extensions
-    install:
-      - Dash to Dock
-      - Gnome 4x UI Improvements
-      - Wallpaper Slideshow
-    uninstall:
-      - Hot Edge
-      - Logo Menu
-
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - org.audacityteam.Audacity           # Audacity
-        - com.bitwarden.desktop               # Bitwarden
-        - io.github.dvlv.boxbuddyrs           # BoxBuddy
-        - org.gnome.Boxes                     # Boxes
-        - com.brave.Browser                   # Brave Browser
-        - com.mattjakeman.ExtensionManager    # Extension Manager
-        - com.github.tchx84.Flatseal          # FlatSeal
-        - io.freetubeapp.FreeTube             # FreeTube
-        - it.mijorus.gearlever                # Gearlever
-        - io.github.shiftey.Desktop           # Github Desktop
-        - org.gnome.TextEditor                # Gnome Text Editor
-        - org.gnome.Loupe                     # Image Viewer        
-        - io.missioncenter.MissionCenter      # Mission Center
-        - org.onlyoffice.desktopeditors       # Only Office
-        - org.prismlauncher.PrismLauncher     # Prism Launcher
-        - com.rustdesk.RustDesk               # Rustdesk        
-        - org.gnome.seahorse.Application      # Seahorse
-        - com.simplenote.Simplenote           # Simplenote
-        - dev.deedles.Trayscale               # Tray Scale
-        - com.github.unrud.VideoDownloader    # Video Downloader
-        - com.vscodium.codium                 # VS Codium
-        - io.github.flattool.Warehouse        # Warehouse
-        - app.zen_browser.zen                 # Zen Browser
-
-      remove:
-        - org.gnome.eog
-
-    user: {} # Also add Flathub user repo, but no user packages
-
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
+  - from-file: module-recipes/rpm-ostree.yml
+  - from-file: module-recipes/gnome-extensions.yml
+  - from-file: module-recipes/default-flatpaks.yml
+#  - from-file: module-recipes/wallpapers.yml
   - type: gschema-overrides
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
