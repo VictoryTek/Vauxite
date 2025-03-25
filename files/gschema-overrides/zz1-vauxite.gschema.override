@@ -1,3 +1,6 @@
 [org.gnome.shell]
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'azwallpaper@azwallpaper.gitlab.com']
 favorite-apps=['io.github.zen_browser.zen.desktop', 'com.brave.Browser.desktop', 'org.gnome.Nautilus.desktop', 'org.wezfurlong.wezterm.desktop', 'wezterm.desktop', 'system-update.desktop', 'com.simplenote.Simplenote.desktop', 'org.gnome.Boxes.desktop', 'com.vscodium.codium.desktop']
+
+[org.gnome.shell.extensions.dash-to-dock]
+dock-position='left'
