@@ -1,6 +1,6 @@
 [org.gnome.shell]
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'azwallpaper@azwallpaper.gitlab.com']
-favorite-apps=['io.github.zen_browser.zen.desktop', 'com.brave.Browser.desktop', 'org.gnome.Nautilus.desktop', 'org.wezfurlong.wezterm.desktop', 'wezterm.desktop', 'system-update.desktop', 'com.simplenote.Simplenote.desktop', 'org.gnome.Boxes.desktop', 'com.vscodium.codium.desktop']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'azwallpaper@azwallpaper.gitlab.com', 'appindicatorsupport@rgcjonas.com', 'blur-my-shell@aunetx', 'caffeine@paoapon.info', 'just-perfection-desktop@just-perfection', 'tilingshell@ferrarodomenico.com']
+favorite-apps=['com.brave.Browser.desktop', 'io.github.zen_browser.zen.desktop', 'org.gnome.Nautilus.desktop', 'wezterm.desktop', 'system-update.desktop', 'org.gnome.Boxes.desktop', 'virt-manager.desktop', 'com.vscodium.codium.desktop', 'com.discordapp.Discord.desktop']
 
 [org.gnome.shell.extensions.dash-to-dock]
 dock-position='LEFT'
@@ -11,3 +11,10 @@ picture-uri-dark='file:///usr/share/backgrounds/gnome-light-dark/vauxite-bb-dark
 
 [org.gnome.desktop.interface]
 color-scheme='prefer-dark'
+
+[org.gnome.settings-daemon.plugins.power]
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='nothing'
+
+[org.gnome.desktop.screensaver]
+lock-enabled=false
