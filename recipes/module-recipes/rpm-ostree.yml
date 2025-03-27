@@ -12,8 +12,8 @@ modules:
       - virt-manager
       - qemu
       - omvf
-      - kvmfr
-      - ls-iommu
+#      - kvmfr
+#      - ls-iommu
 
     remove:
       # example: removing firefox (in favor of the flatpak)
