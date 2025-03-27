@@ -1,5 +1,8 @@
-type: wallpapers
-source: local
-default:
-  wallpaper-light-dark:
-    - vauxite-bb-light.jxl + vauxite-bb-dark.jxl
+name: create_dirs
+  paths:
+    - "/usr/share/backgrounds/vauxite-light-dark"
+
+type: copy
+files:
+  "files/wallpapers/gnome-light-dark/vauxite-bb-light.jxl": "/usr/share/backgrounds/vauxite-light-dark/vauxite-bb-light.jxl"
+  "files/wallpapers/gnome-light-dark/vauxite-bb-dark.jxl": "/usr/share/backgrounds/vauxite-light-dark/vauxite-bb-dark.jxl"

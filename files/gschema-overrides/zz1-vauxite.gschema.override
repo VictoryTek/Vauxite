@@ -21,3 +21,8 @@ lock-enabled=false
 
 [org.gnome.login-screen]
 logo='/usr/share/pixmaps/vauxite-gdm-logo.png'
+
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/vauxite-light-dark/vauxite-bb-light.jxl'
+picture-uri-dark='file:///usr/share/backgrounds/vauxite-light-dark/vauxite-bb-dark.jxl'
+
