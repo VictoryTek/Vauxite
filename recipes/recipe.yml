@@ -18,5 +18,5 @@ modules:
   - from-file: module-recipes/default-flatpaks.yml
 #  - from-file: module-recipes/scripts.yml
 #  - from-file: module-recipes/wallpapers.yml
-  - rom-file: module-recipes/gschema-overrides
+  - from-file: module-recipes/gschema-overrides
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
