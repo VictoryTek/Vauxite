@@ -1,5 +1,6 @@
 type: gnome-extensions
 install:
+  - Alphabetical App Grid
   - 7364 # Background Logo
   - Dash to Dock
   - Gnome 4x UI Improvements
