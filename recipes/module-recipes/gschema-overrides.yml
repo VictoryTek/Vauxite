@@ -1,0 +1,6 @@
+modules:
+  - type: gschema-overrides
+    include:
+    - zz01-vauxite.gschema.override
+    - zz02-org-gnome-desktop-background.gschema.override
+    - zz03-org-gnome-login-screen.gschema.override
