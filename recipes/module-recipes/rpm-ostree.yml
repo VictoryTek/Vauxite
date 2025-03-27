@@ -11,7 +11,7 @@ modules:
       - flat-remix-gtk4-theme
       - virt-manager
       - qemu
-      - omvf
+#      - omvf
 #      - kvmfr
 #      - ls-iommu
 
