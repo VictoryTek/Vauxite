@@ -1,13 +1,10 @@
 type: gnome-extensions
 install:
 #  - Background Logo
+  - 889
   - Dash to Dock
   - Gnome 4x UI Improvements
   - Wallpaper Slideshow
 uninstall:
   - Hot Edge
   - Logo Menu
-
-#type: copy
-#src: files/wallpapers/gnome-light-dark/vauxite-bb-light.jxl
-#dest: /usr/share/backgrounds/vauxite-light-dark/
