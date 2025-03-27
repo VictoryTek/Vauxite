@@ -1,5 +1,5 @@
 [org.gnome.shell]
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'appindicatorsupport@rgcjonas.com', 'blur-my-shell@aunetx', 'caffeine@paoapon.info', 'just-perfection-desktop@just-perfection', 'tilingshell@ferrarodomenico.com']
+enabled-extensions=['background-logo@fedorahosted.org', 'dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'appindicatorsupport@rgcjonas.com', 'blur-my-shell@aunetx', 'caffeine@paoapon.info', 'just-perfection-desktop@just-perfection', 'tilingshell@ferrarodomenico.com']
 favorite-apps=['com.brave.Browser.desktop', 'io.github.zen_browser.zen.desktop', 'org.gnome.Nautilus.desktop', 'wezterm.desktop', 'system-update.desktop', 'org.gnome.Boxes.desktop', 'virt-manager.desktop', 'com.vscodium.codium.desktop', 'com.discordapp.Discord.desktop']
 
 [org.gnome.shell.extensions.dash-to-dock]
