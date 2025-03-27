@@ -7,3 +7,11 @@ install:
 uninstall:
   - Hot Edge
   - Logo Menu
+
+name: create_dirs
+  paths:
+    - "/usr/share/vauxite-logos/"
+
+type: copy
+src: files/system/usr/share/vauxite-logo/vauxite_background.png
+dest: /usr/share/vauxite-logos/
