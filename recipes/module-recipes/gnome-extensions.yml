@@ -8,10 +8,10 @@ uninstall:
   - Hot Edge
   - Logo Menu
 
-type: script
-snippets:
-  - mkdir -p /usr/share/vauxite-logos/
-  - cp /files/system/usr/share/vauxite-logo/vauxite_background.png /usr/share/vauxite-logos/
+#type: script
+#snippets:
+#  - mkdir -p /usr/share/vauxite-logos/
+#  - cp /files/system/usr/share/vauxite-logo/vauxite_background.png /usr/share/vauxite-logos/
 
 #name: create_dirs
 #  paths:
