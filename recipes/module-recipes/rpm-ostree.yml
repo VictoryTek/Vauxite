@@ -9,11 +9,9 @@ modules:
       - starship
       - flat-remix-icon-theme
       - flat-remix-gtk4-theme
-      - virt-manager
-      - qemu
-#      - omvf
-#      - kvmfr
-#      - ls-iommu
+#      - virt-manager
+#      - qemu
+
 
     remove:
       # example: removing firefox (in favor of the flatpak)

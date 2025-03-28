@@ -5,10 +5,6 @@ favorite-apps=['com.brave.Browser.desktop', 'io.github.zen_browser.zen.desktop',
 [org.gnome.shell.extensions.dash-to-dock]
 dock-position='LEFT'
 
-[org.gnome.desktop.background]
-picture-uri='file:///usr/share/backgrounds/gnome-light-dark/vauxite-bb-light.jxl'
-picture-uri-dark='file:///usr/share/backgrounds/gnome-light-dark/vauxite-bb-dark.jxl'
-
 [org.gnome.desktop.interface]
 color-scheme='prefer-dark'
 
@@ -21,8 +17,3 @@ lock-enabled=false
 
 [org.gnome.login-screen]
 logo='/usr/share/pixmaps/vauxite-gdm-logo.png'
-
-[org.gnome.desktop.background]
-picture-uri='file:///usr/share/backgrounds/vauxite-light-dark/vauxite-bb-light.jxl'
-picture-uri-dark='file:///usr/share/backgrounds/vauxite-light-dark/vauxite-bb-dark.jxl'
-
