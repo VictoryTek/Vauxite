@@ -17,7 +17,7 @@ uninstall:
   - Launch New Instance
   - Places Status Indicator
   - User Themes
-  - Window List
+#  - Window List
 
 #type: script
 #snippets:
