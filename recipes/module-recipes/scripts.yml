@@ -1,9 +1,4 @@
-type: script
-scripts:
-  - logo.sh
-
-snippets:
-  # make directory for Background logo extension.
-  - mkdir -p /usr/share/vauxite-logos/
-  # Copy the logo to the new folder.
-  - cp /files/system/usr/share/vauxite-logo/vauxite_background.png /usr/share/vauxite-logos/
+modules:
+  - type: script
+    scripts:
+      - plymouth.sh # example: run config/scripts/myscript.sh
