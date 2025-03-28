@@ -1,8 +1,5 @@
-name: create_dirs
-  paths:
-    - "/usr/share/backgrounds/vauxite-light-dark"
-
-type: copy
-files:
-  "files/wallpapers/gnome-light-dark/vauxite-bb-light.jxl": "/usr/share/backgrounds/vauxite-light-dark/vauxite-bb-light.jxl"
-  "files/wallpapers/gnome-light-dark/vauxite-bb-dark.jxl": "/usr/share/backgrounds/vauxite-light-dark/vauxite-bb-dark.jxl"
+name: copy
+  files:
+    "files/system/usr/share/vauxite/vauxite-bb-light.jxl": "/usr/share/backgrounds/vauxite-bb-light.jxl"
+    "files/system/usr/share/vauxite/vauxite-bb-dark.jxl": "/usr/share/backgrounds/vauxite-bb-dark.jxl"
+    "files/system/usr/share/vauxite/default-wallpaper.xml": "/usr/share/backgrounds/default-wallpaper.xml"

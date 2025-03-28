@@ -1,0 +1,20 @@
+<background>
+  <static>
+    <duration>1.0</duration>
+    <file>/usr/share/backgrounds/vauxite-bb-light.jxl</file>
+  </static>
+  <transition>
+    <duration>1.0</duration>
+    <from>/usr/share/backgrounds/vauxite-bb-light.jxl</from>
+    <to>/usr/share/backgrounds/vauxite-bb-dark.jxl</to>
+  </transition>
+  <static>
+    <duration>1.0</duration>
+    <file>/usr/share/backgrounds/vauxite-bb-dark.jxl</file>
+  </static>
+  <transition>
+    <duration>1.0</duration>
+    <from>/usr/share/backgrounds/vauxite-bb-dark.jxl</from>
+    <to>/usr/share/backgrounds/vauxite-bb-light.jxl</to>
+  </transition>
+</background>
