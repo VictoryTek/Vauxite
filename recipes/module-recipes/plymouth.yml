@@ -2,3 +2,8 @@ modules:
   - type: copy
     src: "files/system/usr/share/plymouth/themes/spinner/watermark.png"
     dest: "/usr/share/plymouth/themes/spinner/watermark.png"
+
+  - name: run-command
+    command: |
+      sudo plymouth-set-default-theme -R spinner
+      sudo dracut --force
