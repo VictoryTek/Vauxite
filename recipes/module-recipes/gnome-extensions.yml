@@ -8,6 +8,16 @@ install:
 uninstall:
   - Hot Edge
   - Logo Menu
+  - Compiz alike magic lamp effect
+  - Compiz windows effect
+  - Coverflow Alt-Tab
+  - GSConnect
+  - Hanabi Extension
+  - HDR Auto Enable
+  - Launch New Instance
+  - Places Status Indicator
+  - User Themes
+  - Window List
 
 #type: script
 #snippets:
