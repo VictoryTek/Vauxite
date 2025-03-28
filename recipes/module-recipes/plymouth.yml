@@ -1,3 +1,4 @@
 name: copy
-  files:
-    "files/system/usr/share/plymouth/themes/spinner/watermark.png": "/usr/share/plymouth/themes/spinner/watermark.png"
+files:
+  - source: "files/system/usr/share/plymouth/themes/spinner/watermark.png"
+    destination: "/usr/share/plymouth/themes/spinner/watermark.png"
