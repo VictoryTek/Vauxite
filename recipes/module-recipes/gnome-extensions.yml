@@ -12,7 +12,7 @@ uninstall:
   - Compiz windows effect
   - Coverflow Alt-Tab
   - GSConnect
-  - Hanabi Extension
+#  - Hanabi Extension
   - HDR Auto Enable
   - Launch New Instance
   - Places Status Indicator
