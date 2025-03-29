@@ -1,4 +1,5 @@
 modules:
   - type: script
     commands:
-      - "glib-compile-schemas /usr/share/glib-2.0/schemas/"
+      - gnome-extensions enable background-logo@fedorahosted.org || true
+      - gnome-shell --replace & disown || true
