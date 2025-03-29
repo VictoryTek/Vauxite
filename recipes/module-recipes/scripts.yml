@@ -1,3 +1,4 @@
+modules:
   - type: script
     scripts:
       - 01-plymouth.sh
