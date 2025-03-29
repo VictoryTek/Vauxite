@@ -8,3 +8,7 @@ modules:
   - type: copy
     src: "files/system/usr/share/vauxite/vauxite-bb-light.jxl"
     dest: "/usr/share/backgrounds/vauxite-bb-light.jxl"
+
+  - type: copy
+    src: "files/system/usr/share/vauxite/vauxite-bb-dark.jxl"
+    dest: "/usr/share/backgrounds/vauxite-bb-light.jxl"
