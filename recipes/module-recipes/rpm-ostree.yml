@@ -9,6 +9,7 @@ modules:
       - starship
       - flat-remix-icon-theme
       - flat-remix-gtk4-theme
+      - gnome-shell-extension-background-logo
 #      - virt-manager
 #      - qemu
 
