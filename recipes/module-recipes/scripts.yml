@@ -1,4 +1,4 @@
 modules:
   - type: script
-    scripts:
-      - plymouth.sh # example: run config/scripts/myscript.sh
+    commands:
+      - "glib-compile-schemas /usr/share/glib-2.0/schemas/"
