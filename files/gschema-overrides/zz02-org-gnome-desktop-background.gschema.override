@@ -1,3 +1,7 @@
 [org.gnome.desktop.background]
+color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/default-wallpaper.xml'
+picture-uri='file:///usr/share/backgrounds/vauxite-bb-light.jxl'
+picture-uri-dark='file:///usr/share/backgrounds/vauxite-bb-dark.jxl'
+primary-color='#000000'
+secondary-color='#000000'
