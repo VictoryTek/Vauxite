@@ -19,7 +19,7 @@ modules:
 #  - from-file: module-recipes/fonts.yml
   - from-file: module-recipes/light-wallpaper.yml
   - from-file: module-recipes/dark-wallpaper.yml
+  - from-file: module-recipes/scripts.yml
   - from-file: module-recipes/plymouth.yml
-#  - from-file: module-recipes/scripts.yml
   - from-file: module-recipes/gschema-overrides.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

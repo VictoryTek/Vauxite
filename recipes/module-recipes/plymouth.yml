@@ -1,4 +1,4 @@
 modules:
   - type: copy
     src: "files/system/usr/share/plymouth/themes/spinner/watermark.png"
-    dest: "/usr/share/plymouth/themes/spinner/watermark.png"
+    dest: "/usr/share/plymouth/themes/circle/watermark.png"

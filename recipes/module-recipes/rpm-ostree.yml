@@ -10,6 +10,7 @@ modules:
       - flat-remix-icon-theme
       - flat-remix-gtk4-theme
       - gnome-shell-extension-background-logo
+      - plymouth-plugin-script
 #      - virt-manager
 #      - qemu
 
