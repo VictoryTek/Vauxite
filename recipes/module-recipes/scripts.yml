@@ -2,4 +2,3 @@ modules:
   - type: script
     commands:
       - gnome-extensions enable background-logo@fedorahosted.org || true
-      - gnome-shell --replace & disown || true
