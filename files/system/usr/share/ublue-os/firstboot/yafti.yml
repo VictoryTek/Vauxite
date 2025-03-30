@@ -6,9 +6,59 @@ screens:
     source: yafti.screen.title
     values:
       title: "Welcome to Vauxite"
-      icon: "/path/to/icon"
+      icon: "/usr/share/vauxite-logo/logo.svg"
       description: |
         ATTENTION!
         Please wait for notification that all flatpaks are installed before proceeding!
 
         Explore useful apps and options!
+
+    pre-install:
+      - "gnome-extensions enable background-logo@fedorahosted.org || true"
+    
+  applications:
+    source: yafti.screen.package
+    values:
+      title: Application Installer
+      show_terminal: true
+      package_manager: yafti.plugin.flatpak
+      package_manager_defaults:
+        user: true
+        system: false
+      groups:
+        User Apps:
+          description: User applications for general usage.
+          default: false
+          packages:
+             - Warp (Global File Sharing): app.drey.Warp
+             - OBS (Screen Recorder): com.obsproject.Studio
+             - Thunderbird (Email): org.mozilla.Thunderbird
+             - Discord: com.discordapp.Discord
+             - Telegram: org.telegram.desktop
+             - FreeTube (YouTube alt.): io.freetubeapp.FreeTube
+             - Dialect (Translator): app.drey.Dialect
+             - Deluge (Torrent): org.deluge_torrent.deluge
+             - ASCII Draw: io.github.nokse22.asciidraw
+             - InkScape: org.inkscape.Inkscape
+             - Mousai (Shazam alt.): io.github.seadve.Mousai
+             - NewsFlash: io.gitlab.news_flash.NewsFlash
+             - LibreOffice: org.libreoffice.LibreOffice
+             - Morphosis (Document Converter): garden.jamie.Morphosis
+             - Tagger: org.nickvision.tagger
+             - Parabolic (YouTube Downloader): org.nickvision.tubeconverter
+             - Nicotine+ (Soulseek alt.): org.nicotine_plus.Nicotine
+             - Tenacity (Audacity alt.): org.tenacityaudio.Tenacity
+             - GitHub Desktop: io.github.shiftey.Desktop
+
+  final-screen:
+    source: yafti.screen.title
+    values:
+      title: "All done!"
+      icon: "/usr/share/vauxite-logo/logo.svg"
+      links:
+        - "Install More Applications":
+            run: /usr/bin/gnome-software
+        - "Website":
+            run: /usr/bin/xdg-open https://github.com/VictoryTek/Vauxite
+      description: |
+        Thanks for trying Vauxite, I hope you enjoy it!
