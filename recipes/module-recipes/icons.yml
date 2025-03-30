@@ -1,0 +1,4 @@
+modules:
+  - type: script
+    scripts:
+      - files/scripts/icons.sh
