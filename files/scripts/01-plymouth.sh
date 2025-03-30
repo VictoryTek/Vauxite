@@ -16,9 +16,3 @@ vauxite_sprite.SetY(Window.GetHeight() - vauxite_image.GetHeight() - 50); # disp
 EOF
 
 plymouth-set-default-theme circle
-
-echo "Setting Plymouth theme to circle"
-echo "circle" > /etc/plymouth/plymouthd.conf
-
-echo "Regenerating initramfs for Plymouth..."
-dracut -f --regenerate-all
