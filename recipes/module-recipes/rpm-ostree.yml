@@ -3,14 +3,18 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/guinuxbr/fedora-copr/repo/fedora-%OS_VERSION%/guinuxbr-fedora-copr-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/dirkp/papirus-icon-theme/repo/fedora-%OS_VERSION%/dirkp-papirus-icon-theme-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/dirkp/bibata-cursor-theme/repo/fedora-%OS_VERSION%/dirkp-bibata-cursor-theme-fedora-%OS_VERSION%.repo
     install:
       - tmux
       - gnome-session-xsession
       - blivet-gui
       - starship
+      - bibata-cursor-theme
       - flat-remix-icon-theme
       - flat-remix-gtk4-theme
       - kora-icon-theme
+      - papirus-icon-theme
       - gnome-shell-extension-background-logo
       - plymouth-plugin-script
 #      - virt-manager
