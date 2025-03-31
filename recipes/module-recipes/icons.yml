@@ -3,4 +3,4 @@ modules:
     scripts:
       - 03-kora-icon-theme.sh
 #      - 04-miya-icon-theme.sh
-      - 05-qogir-icon-theme.sh
+#      - 05-qogir-icon-theme.sh
