@@ -8,6 +8,7 @@ modules:
     install:
       # System Utilities
       - blivet-gui
+      - plymouth-plugin-script
       - tailscale
       - tmux
 
