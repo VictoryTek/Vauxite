@@ -1,4 +1,4 @@
 modules:
   - type: script
     scripts:
-      - icons.sh
+      - 03-kora-icon-theme.sh
