@@ -2,7 +2,7 @@
 
 set -oue pipefail
 
-GITHUB_URL=""https://github.com/vinceliuice/Qogir-icon-theme"
+GITHUB_URL="https://github.com/vinceliuice/Qogir-icon-theme"
 if [ -z "$GITHUB_URL" ]; then
   echo "Error: GITHUB_URL is not set."
   exit 1
