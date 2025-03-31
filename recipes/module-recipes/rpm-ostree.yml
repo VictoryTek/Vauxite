@@ -12,7 +12,7 @@ modules:
       - gnome-session-xsession
       - blivet-gui
       - starship
-#      - bibata-cursor-theme
+      - bibata-cursor-theme
       - flat-remix-icon-theme
       - flat-remix-gtk4-theme
 #      - kora-icon-theme
