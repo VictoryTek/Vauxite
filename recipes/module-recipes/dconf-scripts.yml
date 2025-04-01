@@ -1,0 +1,4 @@
+modules:
+  - type: script
+    scripts:
+      - 04-dconf.sh
