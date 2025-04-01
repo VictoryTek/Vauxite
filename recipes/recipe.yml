@@ -25,6 +25,6 @@ modules:
   - from-file: module-recipes/plymouth-scripts.yml
   - from-file: module-recipes/plymouth-copy.yml
   - from-file: module-recipes/gschema-overrides.yml
-  - from-file: module-recipes/dconf-scripts.yml
+#  - from-file: module-recipes/dconf-scripts.yml
   - type: initramfs
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
