@@ -4,7 +4,9 @@ install:
 #  - 7364 # Background Logo
   - Dash to Dock
   - Gnome 4x UI Improvements
+  - Steal my focus window
   - Wallpaper Slideshow
+
 uninstall:
   - Hot Edge
   - Logo Menu
