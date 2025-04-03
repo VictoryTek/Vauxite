@@ -1,0 +1,4 @@
+modules:
+  - type: copy
+    src: "files/system/etc/dconf/db/local.d/00-settings"
+    dest: "/etc/dconf/db/local.d/00-settings"
