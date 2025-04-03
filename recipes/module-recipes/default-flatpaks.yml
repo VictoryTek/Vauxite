@@ -29,5 +29,9 @@ system:
 
   remove:
     - org.gnome.eog
+    - io.github.nokse22.Exhibit
+    - org.gnome.Weather
+    - org.gnome.clocks
+    - org.gnome.Characters
 
 user: {} # Also add Flathub user repo, but no user packages

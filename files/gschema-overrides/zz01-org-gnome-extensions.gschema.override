@@ -1,6 +1,6 @@
 [org.gnome.shell]
 enabled-extensions=['AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'background-logo@fedorahosted.org', 'caffeine@patapon.info', 'dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'tilingshell@ferrarodomenico.com']
-favorite-apps=['com.brave.Browser.desktop', 'io.github.zen_browser.zen.desktop', 'org.gnome.Nautilus.desktop', 'wezterm.desktop', 'system-update.desktop', 'org.gnome.Boxes.desktop', 'virt-manager.desktop', 'com.vscodium.codium.desktop', 'com.discordapp.Discord.desktop']
+favorite-apps=['com.brave.Browser.desktop', 'io.github.zen_browser.zen.desktop', 'org.gnome.Nautilus.desktop', 'com.mitchellh.ghostty.desktop', 'wezterm.desktop', 'system-update.desktop', 'org.gnome.Boxes.desktop', 'virt-manager.desktop', 'com.vscodium.codium.desktop', 'com.discordapp.Discord.desktop']
 
 [org.gnome.shell.extensions.dash-to-dock]
 dock-position='LEFT'
