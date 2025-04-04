@@ -17,7 +17,7 @@ modules:
   - from-file: module-recipes/gnome-extensions.yml
   - from-file: module-recipes/default-flatpaks.yml
   - from-file: module-recipes/icons.yml
-  - type: yafti
+#  - type: yafti
   - from-file: module-recipes/bling.yml
   - from-file: module-recipes/fonts.yml
   - from-file: module-recipes/light-wallpaper.yml

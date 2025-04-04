@@ -1,8 +1,8 @@
 type: gnome-extensions
 install:
   - Alphabetical App Grid
-#  - 7364 # Background Logo
   - Dash to Dock
+  - Desktop Logo
   - Gnome 4x UI Improvements
   - Steal my focus window
   - Wallpaper Slideshow
@@ -14,12 +14,10 @@ uninstall:
   - Compiz windows effect
   - Coverflow Alt-Tab
   - GSConnect
-#  - Hanabi Extension
   - HDR Auto Enable
   - Launch New Instance
   - Places Status Indicator
   - User Themes
-#  - Window List
 
 #type: script
 #snippets:
