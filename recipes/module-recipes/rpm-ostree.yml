@@ -14,8 +14,8 @@ modules:
 
       # GNOME & Theming
       - bibata-cursor-theme
-      - flat-remix-gtk4-theme
-      - flat-remix-icon-theme
+#      - flat-remix-gtk4-theme
+#      - flat-remix-icon-theme
       - gnome-session-xsession
 #      - gnome-shell-extension-background-logo
 
