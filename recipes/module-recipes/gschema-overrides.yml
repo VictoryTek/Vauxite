@@ -1,8 +1,8 @@
 modules:
   - type: gschema-overrides
     include:
-    - zz00-org-gnome-desktop-interface.gschema.override
-    - zz01-org-gnome-extensions.gschema.override
-    - zz02-org-gnome-desktop-background.gschema.override
-    - zz03-org-gnome-login-screen.gschema.override
-    - zz04-org-gnome-desktop-icons.gschema.override
+    - zz1-org-gnome-desktop-interface.gschema.override
+    - zz2-org-gnome-extensions.gschema.override
+    - zz3-org-gnome-desktop-background.gschema.override
+    - zz4-org-gnome-login-screen.gschema.override
+    - zz5-org-gnome-desktop-icons.gschema.override
