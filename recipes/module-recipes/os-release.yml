@@ -1,0 +1,4 @@
+modules:
+  - type: copy
+    src: "files/system/etc/os-release"
+    dest: "/etc/os-release"

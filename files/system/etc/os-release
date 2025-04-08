@@ -1,0 +1,12 @@
+NAME="Vauxite"
+VERSION="41 (Based on Bazzite)"
+ID=bazzite
+ID_LIKE=fedora
+VERSION_ID=41
+PLATFORM_ID="platform:f41"
+PRETTY_NAME="Vauxite Linux 41 (FROM Bazzite)"
+ANSI_COLOR="0;36"
+CPE_NAME="cpe:/o:universal-blue:vauxite:41"
+HOME_URL="https://github.com/VictoryTek/Vauxite"
+SUPPORT_URL="https://github.com/VictoryTek/Vauxite"
+BUG_REPORT_URL="https://github.com/VictoryTek/Vauxite"
