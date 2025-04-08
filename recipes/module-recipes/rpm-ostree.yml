@@ -30,4 +30,4 @@ modules:
 
     remove:
       - waydroid
-      - waydroid-selinux  
+      - waydroid-selinux
