@@ -2,4 +2,5 @@ modules:
   - type: systemd
     system:
       enabled:
-        - dconf-update.service
+        - libvirtd.service
+        - virtlogd.socket
