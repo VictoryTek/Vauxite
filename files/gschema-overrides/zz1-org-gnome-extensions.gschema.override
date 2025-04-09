@@ -4,8 +4,3 @@ favorite-apps=['com.brave.Browser.desktop', 'app.zen_browser.zen.desktop', 'org.
 
 [org.gnome.shell.extensions.dash-to-dock]
 dock-position='LEFT'
-
-#[org.gnome.shell.extensions.logo-widget]
-#filename='/usr/share/vauxite-logo/vauxite_background.png'
-#filename-dark='/usr/share/vauxite-logo/vauxite_background.png'
-#show-for-all-backgrounds=true
