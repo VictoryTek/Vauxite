@@ -1,0 +1,10 @@
+[org.gnome.desktop.app-folders]
+folder-children=['Utilities', 'Virtualization']
+
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Virtualization/]
+name='Virtualization'
+apps=['virt-manager.desktop', 'org.gnome.Boxes.desktop']
+
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/]
+name='Utilities'
+apps=['gnome-system-monitor.desktop', 'gnome-disk-utility.desktop']
