@@ -1,0 +1,4 @@
+modules:
+  - type: script
+    scripts:
+      - 06-remove-waydroid-extras.sh
