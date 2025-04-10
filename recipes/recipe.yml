@@ -27,6 +27,7 @@ modules:
   - from-file: module-recipes/plymouth-scripts.yml
   - from-file: module-recipes/plymouth-copy.yml
   - from-file: module-recipes/gschema-overrides.yml
+  - from-file: module-recipes/remove-waydroid-extras.yml
 #  - from-file: module-recipes/dconf.yml
 #  - from-file: module-recipes/dconf-scripts.yml
 #  - from-file: module-recipes/systemd.yml
