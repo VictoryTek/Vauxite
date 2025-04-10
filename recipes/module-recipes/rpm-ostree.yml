@@ -40,4 +40,4 @@ modules:
     remove:
       - waydroid
       - waydroid-selinux
-      - waydroid-container-restart
+#      - waydroid-container-restart
