@@ -7,10 +7,10 @@ modules:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       # System Utilities
-      - blivet-gui
-      - plymouth-plugin-script
-      - tailscale
-      - tmux
+#      - blivet-gui
+#      - plymouth-plugin-script
+#      - tailscale
+#      - tmux
 
       # GNOME & Theming
 #      - bibata-cursor-theme
@@ -38,6 +38,6 @@ modules:
 
 
     remove:
-      - waydroid
-      - waydroid-selinux
+#      - waydroid
+#      - waydroid-selinux
 #      - waydroid-container-restart
