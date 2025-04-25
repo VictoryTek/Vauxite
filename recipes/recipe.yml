@@ -15,7 +15,7 @@ modules:
   - from-file: module-recipes/files.yml
   - from-file: module-recipes/os-release.yml
 #  - from-file: module-recipes/autostart.yml
-  - from-file: module-recipes/rpm-ostree.yml
+#  - from-file: module-recipes/rpm-ostree.yml
   - from-file: module-recipes/default-flatpaks.yml
   - from-file: module-recipes/gnome-extensions.yml
   - from-file: module-recipes/icons.yml
