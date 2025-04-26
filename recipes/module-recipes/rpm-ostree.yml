@@ -7,37 +7,37 @@ modules:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       # System Utilities
-#      - blivet-gui
-#      - plymouth-plugin-script
-#      - tailscale
-#      - tmux
+      - blivet-gui
+      - plymouth-plugin-script
+      - tailscale
+      - tmux
 
       # GNOME & Theming
-#      - bibata-cursor-theme
-##      - flat-remix-gtk4-theme
-#      - flat-remix-icon-theme
-#      - gnome-session-xsession
-#      - gnome-shell-extension-background-logo
+      - bibata-cursor-theme
+#      - flat-remix-gtk4-theme
+      - flat-remix-icon-theme
+      - gnome-session-xsession
+      - gnome-shell-extension-background-logo
 
       # Terminal & Shell Enhancements
-#      - ghostty
-#      - starship
+      - ghostty
+      - starship
 
       # Virtualization
-#      - virt-install
-#      - libvirt-daemon-config-network
-#      - libvirt-daemon-kvm
-#      - qemu-kvm
-#      - virt-manager
-#      - virt-viewer
+      - virt-install
+      - libvirt-daemon-config-network
+      - libvirt-daemon-kvm
+      - qemu-kvm
+      - virt-manager
+      - virt-viewer
       # Optional Packages:
-#      - guestfs-tools
-#      - libguestfs-tools
-#      - python3-libguestfs
-#      - virt-top
+      - guestfs-tools
+      - libguestfs-tools
+      - python3-libguestfs
+      - virt-top
 
 
     remove:
-#      - waydroid
-#      - waydroid-selinux
-#      - waydroid-container-restart
+      - waydroid
+      - waydroid-selinux
+      - waydroid-container-restart
