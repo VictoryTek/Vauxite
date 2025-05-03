@@ -37,7 +37,7 @@ modules:
       #- virt-top
 
 
-    remove:
+    #remove:
       #- waydroid
       #- waydroid-selinux
       #- waydroid-container-restart
