@@ -15,7 +15,7 @@ modules:
   - from-file: module-recipes/files.yml
   - from-file: module-recipes/os-release.yml
 #  - from-file: module-recipes/autostart.yml
-  - from-file: module-recipes/rpm-ostree.yml
+  - from-file: module-recipes/dnf.yml
   - from-file: module-recipes/default-flatpaks.yml
   - from-file: module-recipes/gnome-extensions.yml
   - from-file: module-recipes/icons.yml
@@ -27,7 +27,6 @@ modules:
   - from-file: module-recipes/plymouth-scripts.yml
   - from-file: module-recipes/plymouth-copy.yml
   - from-file: module-recipes/gschema-overrides.yml
-  - from-file: module-recipes/remove-waydroid-extras.yml
 #  - from-file: module-recipes/dconf.yml
 #  - from-file: module-recipes/dconf-scripts.yml
 #  - from-file: module-recipes/systemd.yml
