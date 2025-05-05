@@ -26,38 +26,35 @@ modules:
     # --------------------------------------------------------------------- #
     install:
       packages:
-        #skip-unavailable: true # skip unavailable packages
-        install-weak-deps: true # Whether to install weak/recommended dependencies.
-        packages:
-          # System Utilities
-          - blivet-gui
-          - plymouth-plugin-script
-          - tailscale
-          - tmux
- 
-          # GNOME & Theming
-          - bibata-cursor-theme
-          - flat-remix-icon-theme
-          - gnome-session-xsession
-          - gnome-shell-extension-background-logo
- 
-          # Terminal & Shell Enhancements
-          - ghostty
-          - starship
- 
-          # Virtualization
-          - virt-install
-          - libvirt-daemon-config-network
-          - libvirt-daemon-kvm
-          - qemu-kvm
-          - virt-manager
-          - virt-viewer
+        # System Utilities
+        - blivet-gui
+        - plymouth-plugin-script
+        - tailscale
+        - tmux
 
-          # Optional Packages:
-          - guestfs-tools
-          - libguestfs-tools
-          - python3-libguestfs
-          - virt-top
+        # GNOME & Theming
+        - bibata-cursor-theme
+        - flat-remix-icon-theme
+        - gnome-session-xsession
+        - gnome-shell-extension-background-logo
+
+        # Terminal & Shell Enhancements
+        - ghostty
+        - starship
+
+        # Virtualization
+        - virt-install
+        - libvirt-daemon-config-network
+        - libvirt-daemon-kvm
+        - qemu-kvm
+        - virt-manager
+        - virt-viewer
+
+        # Optional Packages:
+        - guestfs-tools
+        - libguestfs-tools
+        - python3-libguestfs
+        - virt-top
  
     remove: #[]
       packages:  
