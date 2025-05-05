@@ -1,4 +1,0 @@
-type: dnf
-group-install:
-  packages: 
-    - virtualization
