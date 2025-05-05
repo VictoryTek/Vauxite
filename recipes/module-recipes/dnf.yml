@@ -2,9 +2,10 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 modules:
   - type: dnf
+    source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
       cleanup: false # clean up added repos after module is done
-      files:
+      files: []
         # - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
         # - custom-file.repo # file path for /files/dnf/custom-file.repo
       copr:
@@ -30,6 +31,7 @@ modules:
         - blivet-gui
         - plymouth-plugin-script
         - tailscale
+        - trayscale
         - tmux
 
         # GNOME & Theming
