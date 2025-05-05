@@ -27,7 +27,7 @@ modules:
         - tmux
 
         # GNOME & Theming
-        - bibata-cursor-theme                                 # peterwu/rendezvous
+        - bibata-cursor-themes                                 # peterwu/rendezvous
         - flat-remix-icon-theme
         - gnome-session-xsession
         #- gnome-shell-extension-background-logo
