@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 modules:
   - type: dnf
-    source: ghcr.io/blue-build/modules/dnf:dnf-module
+    #source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
       cleanup: false # clean up added repos after module is done
 
