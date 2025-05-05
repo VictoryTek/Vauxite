@@ -25,6 +25,11 @@ modules:
       # - zoom
  
     # --------------------------------------------------------------------- #
+    remove: #[]
+      packages:  
+        - waydroid
+        - waydroid-selinux    
+    
     install:
       packages:
         # System Utilities
@@ -35,14 +40,14 @@ modules:
         - tmux
 
         # GNOME & Theming
-        - bibata-cursor-theme
+        - bibata-cursor-theme                                 # peterwu/rendezvous
         - flat-remix-icon-theme
         - gnome-session-xsession
-        - gnome-shell-extension-background-logo
+        #- gnome-shell-extension-background-logo
 
         # Terminal & Shell Enhancements
-        - ghostty
-        - starship
+        - ghostty                                             # pgdev/ghostty
+        - starship                                            # atim/starship
 
         # Virtualization
         - virt-install
@@ -54,11 +59,6 @@ modules:
 
         # Optional Packages:
         - guestfs-tools
-        - libguestfs-tools
+        #- libguestfs-tools
         - python3-libguestfs
         - virt-top
- 
-    remove: #[]
-      packages:  
-        - waydroid
-        - waydroid-selinux
