@@ -5,9 +5,6 @@ modules:
     source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
       cleanup: false # clean up added repos after module is done
-      files: []
-        # - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-        # - custom-file.repo # file path for /files/dnf/custom-file.repo
 
       copr:
         - atim/starship
@@ -15,13 +12,7 @@ modules:
         - peterwu/rendezvous
       # Put any repo GPG keys here
 
-      keys: []  
-        # - https://example.com/repo-1.asc
-        # - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-        # - key2.asc
-      # nonfree: negativo17 | rpmfusion
-
-    remove: #[]
+    remove:
       packages:  
         - waydroid
         - waydroid-selinux    
