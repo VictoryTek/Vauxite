@@ -1,0 +1,4 @@
+modules:
+  - type: copy
+    src: "files/system/etc/skel/config/starship.yml"
+    dest: "/etc/skel/.config/starship.yml"
