@@ -59,7 +59,7 @@ modules:
           - python3-libguestfs
           - virt-top
  
- 
-        remove: []
-          #- waydroid
-          #- waydroid-selinux
+    remove: #[]
+      packages:  
+        - waydroid
+        - waydroid-selinux
