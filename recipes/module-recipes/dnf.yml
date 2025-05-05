@@ -61,5 +61,5 @@ modules:
  
  
         remove: []
-          - waydroid
-          - waydroid-selinux
+          #- waydroid
+          #- waydroid-selinux
