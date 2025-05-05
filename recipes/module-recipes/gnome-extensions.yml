@@ -14,7 +14,7 @@ uninstall:
   - Compiz windows effect
   #- Coverflow Alt-Tab
   - GSConnect
-  - HDR Auto Enable
+  #- HDR Auto Enable
   - Launch New Instance
   - Places Status Indicator
   - User Themes
