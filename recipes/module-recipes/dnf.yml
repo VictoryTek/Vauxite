@@ -7,8 +7,8 @@ modules:
       cleanup: false # clean up added repos after module is done
 
       copr:
-        - atim/starship
-        - pgdev/ghostty
+        #- atim/starship
+        - gloriouseggroll/nobara-42
         - peterwu/rendezvous
       # Put any repo GPG keys here
 
@@ -33,8 +33,8 @@ modules:
         #- gnome-shell-extension-background-logo
 
         # Terminal & Shell Enhancements
-        - ghostty                                             # pgdev/ghostty
-        - starship                                            # atim/starship
+        - ghostty                                             # gloriouseggroll/nobara-42
+        - starship                                            # gloriouseggroll/nobara-42
 
         # Virtualization
         - virt-install
