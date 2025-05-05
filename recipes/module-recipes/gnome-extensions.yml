@@ -12,7 +12,7 @@ uninstall:
   - Logo Menu
   - Compiz alike magic lamp effect
   - Compiz windows effect
-  - Coverflow Alt-Tab
+  #- Coverflow Alt-Tab
   - GSConnect
   - HDR Auto Enable
   - Launch New Instance
