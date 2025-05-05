@@ -8,28 +8,24 @@ modules:
       files: []
         # - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
         # - custom-file.repo # file path for /files/dnf/custom-file.repo
+
       copr:
         - atim/starship
         - pgdev/ghostty
         - peterwu/rendezvous
       # Put any repo GPG keys here
+
       keys: []  
         # - https://example.com/repo-1.asc
         # - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
         # - key2.asc
       # nonfree: negativo17 | rpmfusion
-    # --------------------------------------------------------------------- #
-    optfix: []
-      # - brave.com
-      # - enpass
-      # - zoom
- 
-    # --------------------------------------------------------------------- #
+
     remove: #[]
       packages:  
         - waydroid
         - waydroid-selinux    
-    
+
     install:
       packages:
         # System Utilities
