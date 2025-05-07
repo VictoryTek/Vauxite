@@ -1,23 +1,23 @@
-type: gnome-extensions
-install:
-  - Alphabetical App Grid
-  - Dash to Dock
-  - Desktop Logo
-  - Gnome 4x UI Improvements
-  - Steal my focus window
-  - Wallpaper Slideshow
+modules:
+  - type: gnome-extensions
+    install:
+      - Alphabetical App Grid
+      - Dash to Dock
+      - Desktop Logo
+      - Gnome 4x UI Improvements
+      - Nothing to say
+      - Steal my focus window
+      - Wallpaper Slideshow
 
-uninstall:
-  - Hot Edge
-  - Logo Menu
-  - Compiz alike magic lamp effect
-  - Compiz windows effect
-  #- Coverflow Alt-Tab
-  - GSConnect
-  #- HDR Auto Enable
-  - Launch New Instance
-  - Places Status Indicator
-  - User Themes
+    uninstall:
+      - Hot Edge
+      - Logo Menu
+      - Compiz alike magic lamp effect
+      - Compiz windows effect
+      - GSConnect
+      - Launch New Instance
+      - Places Status Indicator
+      - User Themes
 
 #type: script
 #snippets:
