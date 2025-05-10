@@ -30,6 +30,7 @@ modules:
         - bibata-cursor-themes                                 # peterwu/rendezvous
         - flat-remix-icon-theme
         - gnome-session-xsession
+        - gnome-tweaks
 
         # Terminal & Shell Enhancements
         - ghostty                                             # gloriouseggroll/nobara-42

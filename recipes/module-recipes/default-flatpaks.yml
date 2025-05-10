@@ -17,6 +17,7 @@ system:
     - org.gnome.Loupe                     # Image Viewer        
     - io.missioncenter.MissionCenter      # Mission Center
     - org.onlyoffice.desktopeditors       # Only Office
+    - dev.overlayed.Overlayed             # Overlayed
     - org.prismlauncher.PrismLauncher     # Prism Launcher
     - com.rustdesk.RustDesk               # Rustdesk        
     - org.gnome.seahorse.Application      # Seahorse
