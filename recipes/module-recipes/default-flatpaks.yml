@@ -8,6 +8,7 @@ system:
     - io.github.dvlv.boxbuddyrs           # BoxBuddy
     - org.gnome.Boxes                     # Boxes
     - com.brave.Browser                   # Brave Browser
+    - com.discordapp.Discord              # Discord
     - com.mattjakeman.ExtensionManager    # Extension Manager
     - com.github.tchx84.Flatseal          # FlatSeal
     - io.freetubeapp.FreeTube             # FreeTube
