@@ -18,6 +18,7 @@ system:
     - io.missioncenter.MissionCenter      # Mission Center
     - org.onlyoffice.desktopeditors       # Only Office
     - dev.overlayed.Overlayed             # Overlayed
+    - org.freedesktop.Piper               # Piper
     - org.prismlauncher.PrismLauncher     # Prism Launcher
     - com.rustdesk.RustDesk               # Rustdesk        
     - org.gnome.seahorse.Application      # Seahorse

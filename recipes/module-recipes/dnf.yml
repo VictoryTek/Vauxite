@@ -21,6 +21,7 @@ modules:
       packages:
         # System Utilities
         - blivet-gui
+        - inxi
         - plymouth-plugin-script
         - tailscale
         - trayscale
