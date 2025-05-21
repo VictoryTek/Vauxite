@@ -11,7 +11,7 @@ modules:
 
     uninstall:
       #- Hot Edge
-      - Logo Menu
+      #- Logo Menu
       - Compiz alike magic lamp effect
       - Compiz windows effect
       - GSConnect
