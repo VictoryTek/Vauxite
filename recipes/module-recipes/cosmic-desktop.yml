@@ -1,3 +1,6 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
 # Install Cosmic Desktop Environment
 type: dnf
 repos:
