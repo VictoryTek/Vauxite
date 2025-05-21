@@ -11,10 +11,3 @@ modules:
       with-optional: true
       packages:    
         - gnome-desktop
-
-    install:
-      packages:
-        # Additional GNOME packages not always included in the base group
-        - gnome-extensions-app    # Extension manager
-        - gnome-shell-extensions  # Extra shell extensions
-
