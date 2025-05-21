@@ -12,21 +12,9 @@ modules:
       packages:    
         - gnome-desktop
 
-    remove:
-      packages:  
-        - waydroid
-
     install:
       packages:
         # Additional GNOME packages not always included in the base group
         - gnome-extensions-app    # Extension manager
         - gnome-shell-extensions  # Extra shell extensions
-
-          # Additional GNOME applications that may not be in the default group
-        - gnome-text-editor      # New GNOME text editor
-  
-        # Media support
-        - gstreamer1-plugins-good
-        - gstreamer1-plugins-bad-free
-        - gstreamer1-plugins-ugly-free
 
