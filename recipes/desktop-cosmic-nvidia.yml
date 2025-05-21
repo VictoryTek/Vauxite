@@ -1,9 +1,9 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: vauxite-gnome-nvidia
+name: vauxite-cosmic-nvidia
 # description will be included in the image's metadata
-description: Personal Bazzite image with GNOME desktop and open-source NVIDIA drivers.
+description: Personal Bazzite image with Cosmic desktop environment and NVIDIA drivers.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bazzite-nvidia-open
@@ -12,8 +12,8 @@ image-version: stable # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  # Install GNOME desktop environment first
-  - from-file: module-recipes/gnome-desktop.yml
+  # Install Cosmic desktop environment first
+  - from-file: module-recipes/cosmic-desktop.yml
   - from-file: module-recipes/files.yml
   - from-file: module-recipes/os-release.yml
 #  - from-file: module-recipes/autostart.yml
@@ -24,8 +24,7 @@ modules:
   - from-file: module-recipes/starship-config.yml
 #  - type: yafti
   - from-file: module-recipes/bling.yml
-  - from-file: module-recipes/fonts.yml
-  - from-file: module-recipes/light-wallpaper.yml
+  - from-file: module-recipes/fonts.yml  - from-file: module-recipes/light-wallpaper.yml
   - from-file: module-recipes/dark-wallpaper.yml
   - from-file: module-recipes/plymouth-scripts.yml
   - from-file: module-recipes/plymouth-copy.yml

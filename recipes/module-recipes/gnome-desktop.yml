@@ -1,0 +1,63 @@
+# Install GNOME desktop environment and essential components
+type: rpm-ostree
+install:
+  # Core GNOME desktop
+  - gnome-shell
+  - gnome-session
+  - gnome-control-center
+  - gnome-terminal
+  - gnome-software
+  - gnome-shell-extensions
+  - gnome-tweaks
+
+  # GNOME apps
+  - gnome-calculator
+  - gnome-calendar
+  - gnome-characters
+  - gnome-clocks
+  - gnome-disk-utility
+  - gnome-font-viewer
+  - gnome-logs
+  - gnome-system-monitor
+  - gnome-text-editor
+  - gnome-weather
+  - nautilus
+  - evince
+  - gedit
+  - totem
+  
+  # Display manager and session
+  - gdm
+  
+  # Essential GNOME dependencies
+  - gnome-keyring
+  - gnome-settings-daemon
+  - gnome-bluetooth
+  - gnome-user-docs
+  - gnome-user-share
+  - gnome-backgrounds
+  
+  # Theme and icon packages
+  - adwaita-icon-theme
+  - gnome-themes-extra
+
+# Set GNOME as the default desktop
+postprocess:
+  - |
+    #!/bin/bash
+    # Enable GDM service
+    systemctl enable gdm.service
+    
+    # Set GNOME as the default session
+    mkdir -p /etc/skel/.config
+    echo "[User]" > /etc/skel/.config/gnome-initial-setup-done
+    echo "SystemAccount=false" >> /etc/skel/.config/gnome-initial-setup-done
+    
+    # Configure default desktop session for GDM
+    if [ -f /var/lib/AccountsService/users/gdm ]; then
+      sed -i 's/^Session=.*/Session=gnome/' /var/lib/AccountsService/users/gdm
+    else
+      mkdir -p /var/lib/AccountsService/users/
+      echo "[User]" > /var/lib/AccountsService/users/gdm
+      echo "Session=gnome" >> /var/lib/AccountsService/users/gdm
+    fi
