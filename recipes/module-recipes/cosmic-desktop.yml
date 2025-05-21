@@ -1,8 +1,14 @@
 # Install Cosmic Desktop Environment
-type: rpm-ostree
+type: dnf
+repos:
+  # Add the COSMIC Desktop COPR repository
+  - copr: "@system76/cosmic"
+
 install:
-  # Cosmic Desktop Core
-  - cosmic-desktop
+  # Install COSMIC Desktop (using group if available)
+  - "@cosmic-desktop || cosmic-desktop"  # Fallback to direct package if group isn't available
+  
+  # Core COSMIC packages
   - cosmic-workspaces-daemon
   - cosmic-launcher
   - cosmic-panel
@@ -34,10 +40,24 @@ install:
 postprocess:
   - |
     #!/bin/bash
+    echo "Setting up COSMIC Desktop Environment..."
+    
+    # Check if cosmic-desktop group exists and install it if available
+    if dnf group list "cosmic-desktop" &> /dev/null; then
+      echo "Installing COSMIC Desktop group..."
+      dnf -y group install "cosmic-desktop" --with-optional
+    else
+      echo "COSMIC Desktop group not found, ensuring individual components are installed..."
+      # Install individual components if needed
+      dnf -y install cosmic-desktop cosmic-workspaces-daemon cosmic-launcher cosmic-panel cosmic-settings cosmic-applets cosmic-session cosmic-greeter cosmic-icontheme cosmic-terminal cosmic-files cosmic-settings-daemon cosmic-design cosmic-screenshot cosmic-applibrary cosmic-notifications xdg-desktop-portal-cosmic
+    fi
+    
     # Enable cosmic-greeter service
-    systemctl enable cosmic-greeter.service
+    echo "Enabling COSMIC greeter service..."
+    systemctl enable cosmic-greeter.service || systemctl enable gdm.service
     
     # Set Cosmic as the default session
+    echo "Configuring default COSMIC session..."
     mkdir -p /etc/skel/.config
     
     # Configure default desktop session
@@ -58,6 +78,9 @@ postprocess:
     
     # Create default user if it doesn't exist
     if [ ! -f /var/lib/AccountsService/users/gdm ]; then
+      echo "Creating default user session configuration..."
       echo "[User]" > /var/lib/AccountsService/users/gdm
       echo "Session=cosmic" >> /var/lib/AccountsService/users/gdm
     fi
+    
+    echo "COSMIC Desktop Environment setup complete."
