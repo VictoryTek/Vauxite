@@ -10,7 +10,7 @@ modules:
       - Wallpaper Slideshow
 
     uninstall:
-      - Hot Edge
+      #- Hot Edge
       - Logo Menu
       - Compiz alike magic lamp effect
       - Compiz windows effect
