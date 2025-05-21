@@ -12,12 +12,12 @@ modules:
     uninstall:
       #- Hot Edge
       #- Logo Menu
-      - Compiz alike magic lamp effect
-      - Compiz windows effect
-      - GSConnect
-      - Launch New Instance
-      - Places Status Indicator
-      - User Themes
+      #- Compiz alike magic lamp effect
+      #- Compiz windows effect
+      #- GSConnect
+      #- Launch New Instance
+      #- Places Status Indicator
+      #- User Themes
 
 #type: script
 #snippets:
