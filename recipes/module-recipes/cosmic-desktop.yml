@@ -6,14 +6,30 @@ modules:
     repos:
       cleanup: false # clean up added repos after module is done
 
-      copr:
-        - system76/cosmic
+    # Group Remove
+    group-remove:
+      packages:
+        - kde-desktop
 
-      # Put any repo GPG keys here
+    remove:
+      packages:
+        - plasma-desktop
+        - sddm
+        - sddm-breeze
+        - kde*
+        - kwin*
+        - kscreen
+        - konsole
+        - dolphin
+        - discover
+        - bluedevil
+        - breeze*
+        - drkonqi
+        - plasma*
+        - xdg-desktop-portal-kde
 
-      # Group installs
-      group-install:
-        with-optional: true
-        packages:    
+    # Group installs
+    group-install:
+      with-optional: true
+      packages:     
           - cosmic-desktop
-
