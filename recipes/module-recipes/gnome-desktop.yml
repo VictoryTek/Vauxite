@@ -11,3 +11,35 @@ modules:
       with-optional: true
       packages:    
         - gnome-desktop
+
+    remove:
+      - "@kde-desktop"
+      - plasma-desktop
+      - sddm
+      - sddm-breeze
+      - kde*
+      - kwin*
+      - kscreen
+      - konsole
+      - dolphin
+      - discover
+      - bluedevil
+      - breeze*
+      - drkonqi
+      - plasma*
+      - xdg-desktop-portal-kde
+
+    install:
+      - gdm
+      - gnome-tweaks
+      - gnome-extensions-app
+      - gnome-shell-extensions
+      - gnome-text-editor
+      - gnome-connections
+      - gnome-weather
+      - gnome-maps
+      - dconf-editor
+      - gnome-boxes
+      - gstreamer1-plugins-good
+      - gstreamer1-plugins-bad-free
+      - gstreamer1-plugins-ugly-free
