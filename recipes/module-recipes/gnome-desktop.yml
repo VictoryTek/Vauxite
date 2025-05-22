@@ -6,40 +6,50 @@ modules:
     repos:
       cleanup: false # clean up added repos after module is done
 
+    # Group Remove
+    group-remove:
+      with-optional: true
+      packages:    
+        - kde-desktop
+
+    remove:
+      packages:
+        - plasma-desktop
+        - sddm
+        - sddm-breeze
+        - kde*
+        - kwin*
+        - kscreen
+        - konsole
+        - dolphin
+        - discover
+        - bluedevil
+        - breeze*
+        - drkonqi
+        - plasma*
+        - xdg-desktop-portal-kde
+
     # Group installs
     group-install:
       with-optional: true
       packages:    
         - gnome-desktop
 
-    remove:
-      - "@kde-desktop"
-      - plasma-desktop
-      - sddm
-      - sddm-breeze
-      - kde*
-      - kwin*
-      - kscreen
-      - konsole
-      - dolphin
-      - discover
-      - bluedevil
-      - breeze*
-      - drkonqi
-      - plasma*
-      - xdg-desktop-portal-kde
-
     install:
-      - gdm
-      - gnome-tweaks
-      - gnome-extensions-app
-      - gnome-shell-extensions
-      - gnome-text-editor
-      - gnome-connections
-      - gnome-weather
-      - gnome-maps
-      - dconf-editor
-      - gnome-boxes
-      - gstreamer1-plugins-good
-      - gstreamer1-plugins-bad-free
-      - gstreamer1-plugins-ugly-free
+      packages:
+        - gnome-shell
+        - gnome-session
+        - gnome-settings-daemon
+        - gnome-control-center
+        - gnome-terminal
+        - gnome-software
+        - gnome-software-plugin-flatpak
+        - gnome-software-packagekit-plugin
+        - gnome-screenshot
+        - gnome-disk-utility
+        - gnome-system-monitor
+        - gnome-calculator
+        - gnome-calendar
+        - gnome-music
+        - gnome-photos
+
