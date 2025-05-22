@@ -34,21 +34,17 @@ modules:
       packages:    
         - gnome-desktop
 
-    install:
-      packages:
-        - gnome-shell
-        - gnome-session
-        - gnome-settings-daemon
-        - gnome-control-center
-        - gnome-terminal
-        - gnome-software
-        - gnome-software-plugin-flatpak
-        - gnome-software-packagekit-plugin
-        - gnome-screenshot
-        - gnome-disk-utility
-        - gnome-system-monitor
-        - gnome-calculator
-        - gnome-calendar
-        - gnome-music
-        - gnome-photos
+    # install:
+    #   packages:
+    #     - gnome-shell
+    #     - gnome-session
+    #     - gnome-settings-daemon
+    #     - gnome-control-center
+    #     - gnome-terminal
+    #     - gnome-software
+    #     - gnome-software-plugin-flatpak
+    #     - gnome-software-packagekit-plugin
+    #     - gnome-screenshot
+    #     - gnome-music
+    #     - gnome-photos
 
