@@ -7,7 +7,6 @@ modules:
       cleanup: false # clean up added repos after module is done
 
       copr:
-        #- atim/starship
         - system76/cosmic
 
       # Put any repo GPG keys here
@@ -18,32 +17,3 @@ modules:
         packages:    
           - cosmic-desktop
 
-    install:
-      packages:
-        # Core COSMIC packages
-        - cosmic-workspaces-daemon
-        - cosmic-launcher
-        - cosmic-panel
-        - cosmic-settings
-        - cosmic-applets
-        - cosmic-session
-        - cosmic-greeter
-        
-        # Additional components
-        - cosmic-icontheme
-        - cosmic-terminal
-        - cosmic-files
-        - cosmic-settings-daemon
-        - cosmic-design
-        - cosmic-screenshot
-        - cosmic-applibrary
-        - cosmic-notifications
-        
-        # Dependencies
-        - xdg-desktop-portal-cosmic
-        
-        # Additional apps that work well with Cosmic
-        - popshop
-        - firefox
-        - gnome-disk-utility
-        - libhandy  # For GTK apps integration
