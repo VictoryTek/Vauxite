@@ -1,89 +1,49 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+modules:
+  - type: dnf
+    #source: ghcr.io/blue-build/modules/dnf:dnf-module
+    repos:
+      cleanup: false # clean up added repos after module is done
 
-# Install Cosmic Desktop Environment
-type: dnf
-repos:
-  # Add the COSMIC Desktop COPR repository
-  - copr: "@system76/cosmic"
+      copr:
+        #- atim/starship
+        - system76/cosmic
 
-install:
-  # Install COSMIC Desktop (using group if available)
-  - "@cosmic-desktop || cosmic-desktop"  # Fallback to direct package if group isn't available
-  
-  # Core COSMIC packages
-  - cosmic-workspaces-daemon
-  - cosmic-launcher
-  - cosmic-panel
-  - cosmic-settings
-  - cosmic-applets
-  - cosmic-session
-  - cosmic-greeter
-  
-  # Additional components
-  - cosmic-icontheme
-  - cosmic-terminal
-  - cosmic-files
-  - cosmic-settings-daemon
-  - cosmic-design
-  - cosmic-screenshot
-  - cosmic-applibrary
-  - cosmic-notifications
-  
-  # Dependencies
-  - xdg-desktop-portal-cosmic
-  
-  # Additional apps that work well with Cosmic
-  - popshop
-  - firefox
-  - gnome-disk-utility
-  - libhandy  # For GTK apps integration
+      # Put any repo GPG keys here
 
-# Set Cosmic as the default desktop
-postprocess:
-  - |
-    #!/bin/bash
-    echo "Setting up COSMIC Desktop Environment..."
-    
-    # Check if cosmic-desktop group exists and install it if available
-    if dnf group list "cosmic-desktop" &> /dev/null; then
-      echo "Installing COSMIC Desktop group..."
-      dnf -y group install "cosmic-desktop" --with-optional
-    else
-      echo "COSMIC Desktop group not found, ensuring individual components are installed..."
-      # Install individual components if needed
-      dnf -y install cosmic-desktop cosmic-workspaces-daemon cosmic-launcher cosmic-panel cosmic-settings cosmic-applets cosmic-session cosmic-greeter cosmic-icontheme cosmic-terminal cosmic-files cosmic-settings-daemon cosmic-design cosmic-screenshot cosmic-applibrary cosmic-notifications xdg-desktop-portal-cosmic
-    fi
-    
-    # Enable cosmic-greeter service
-    echo "Enabling COSMIC greeter service..."
-    systemctl enable cosmic-greeter.service || systemctl enable gdm.service
-    
-    # Set Cosmic as the default session
-    echo "Configuring default COSMIC session..."
-    mkdir -p /etc/skel/.config
-    
-    # Configure default desktop session
-    if [ -d /var/lib/AccountsService/users/ ]; then
-      for user in /var/lib/AccountsService/users/*; do
-        if [ -f "$user" ]; then
-          # Check if Session line exists
-          if grep -q "^Session=" "$user"; then
-            sed -i 's/^Session=.*/Session=cosmic/' "$user"
-          else
-            echo "Session=cosmic" >> "$user"
-          fi
-        fi
-      done
-    else
-      mkdir -p /var/lib/AccountsService/users/
-    fi
-    
-    # Create default user if it doesn't exist
-    if [ ! -f /var/lib/AccountsService/users/gdm ]; then
-      echo "Creating default user session configuration..."
-      echo "[User]" > /var/lib/AccountsService/users/gdm
-      echo "Session=cosmic" >> /var/lib/AccountsService/users/gdm
-    fi
-    
-    echo "COSMIC Desktop Environment setup complete."
+      # Group installs
+      group-install:
+        with-optional: true
+        packages:    
+          - cosmic-desktop
+
+    install:
+      packages:
+        # Core COSMIC packages
+        - cosmic-workspaces-daemon
+        - cosmic-launcher
+        - cosmic-panel
+        - cosmic-settings
+        - cosmic-applets
+        - cosmic-session
+        - cosmic-greeter
+        
+        # Additional components
+        - cosmic-icontheme
+        - cosmic-terminal
+        - cosmic-files
+        - cosmic-settings-daemon
+        - cosmic-design
+        - cosmic-screenshot
+        - cosmic-applibrary
+        - cosmic-notifications
+        
+        # Dependencies
+        - xdg-desktop-portal-cosmic
+        
+        # Additional apps that work well with Cosmic
+        - popshop
+        - firefox
+        - gnome-disk-utility
+        - libhandy  # For GTK apps integration
