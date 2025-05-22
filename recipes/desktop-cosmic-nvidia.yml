@@ -24,7 +24,8 @@ modules:
   - from-file: module-recipes/starship-config.yml
 #  - type: yafti
   - from-file: module-recipes/bling.yml
-  - from-file: module-recipes/fonts.yml  - from-file: module-recipes/light-wallpaper.yml
+  - from-file: module-recipes/fonts.yml
+  - from-file: module-recipes/light-wallpaper.yml
   - from-file: module-recipes/dark-wallpaper.yml
   - from-file: module-recipes/plymouth-scripts.yml
   - from-file: module-recipes/plymouth-copy.yml
