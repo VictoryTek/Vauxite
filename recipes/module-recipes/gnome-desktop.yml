@@ -8,8 +8,7 @@ modules:
 
     # Group Remove
     group-remove:
-      with-optional: true
-      packages:    
+      packages:
         - kde-desktop
 
     remove:
