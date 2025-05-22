@@ -13,11 +13,5 @@ modules:
         mkdir -p /etc/skel/.config
         echo "[User]" > /etc/skel/.config/gnome-initial-setup-done
         echo "SystemAccount=false" >> /etc/skel/.config/gnome-initial-setup-done
-        if [ -f /var/lib/AccountsService/users/gdm ]; then
-          sed -i 's/^Session=.*/Session=gnome/' /var/lib/AccountsService/users/gdm
-        else
-          mkdir -p /var/lib/AccountsService/users/
-          echo "[User]" > /var/lib/AccountsService/users/gdm
-          echo "Session=gnome" >> /var/lib/AccountsService/users/gdm
-        fi
+        if [ -f /var/lib/AccountsService/users/gdm ]; then sed -i 's/^Session=.*/Session=gnome/' /var/lib/AccountsService/users/gdm; else mkdir -p /var/lib/AccountsService/users/; echo "[User]" > /var/lib/AccountsService/users/gdm; echo "Session=gnome" >> /var/lib/AccountsService/users/gdm; fi
         echo "GNOME post-setup complete."
