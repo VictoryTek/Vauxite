@@ -1,0 +1,13 @@
+---
+modules:
+  - type: systemd
+    system:
+      enabled:
+        - cosmic-greeter.service
+      disabled:
+        - sddm.service
+        - gdm.service
+        - lightdm.service
+    links:
+      - target: /usr/lib/systemd/system/cosmic-greeter.service
+        linkname: /etc/systemd/system/display-manager.service
