@@ -1,5 +1,8 @@
 ---
 modules:
+  - type: script
+    scripts:
+      - files/scripts/set-cosmic-greeter.sh
   - type: systemd
     system:
       enabled:
@@ -8,6 +11,3 @@ modules:
         - sddm.service
         - gdm.service
         - lightdm.service
-    links:
-      - target: /usr/lib/systemd/system/cosmic-greeter.service
-        linkname: /etc/systemd/system/display-manager.service
