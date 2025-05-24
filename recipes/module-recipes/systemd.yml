@@ -2,7 +2,7 @@
 modules:
   - type: script
     scripts:
-      - scripts/set-cosmic-greeter.sh
+      - files/scripts/set-cosmic-greeter.sh
   - type: systemd
     system:
       enabled:
