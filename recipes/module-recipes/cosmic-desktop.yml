@@ -2,9 +2,12 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 modules:
   - type: dnf
-    #source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
       cleanup: false # clean up added repos after module is done
+
+      copr:
+        - ryanabx/cosmic-epoch
+      # Put any repo GPG keys here
 
     # Group Remove
     group-remove:
@@ -33,3 +36,7 @@ modules:
       with-optional: true
       packages:     
           - cosmic-desktop
+
+    install:
+      packages:
+        - cosmic-greeter
