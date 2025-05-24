@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -oue pipefail
+
 set -e
 # Set cosmic-greeter as the default display manager
 target=/usr/lib/systemd/system/cosmic-greeter.service
