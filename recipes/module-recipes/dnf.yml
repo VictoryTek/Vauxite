@@ -5,16 +5,11 @@ modules:
     #source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
       cleanup: false # clean up added repos after module is done
-      files:
-        - vscode.repo
 
       copr:
         - gloriouseggroll/nobara-42
-        - peterwu/rendezvous
-      
+        - peterwu/rendezvous     
       # Put any repo GPG keys here
-      keys:
-        - https://packages.microsoft.com/keys/microsoft.asc
 
     remove:
       packages:  
@@ -25,7 +20,6 @@ modules:
       packages:
         # System Utilities
         - blivet-gui
-        - code
         - inxi
         - plymouth-plugin-script
         - tailscale
