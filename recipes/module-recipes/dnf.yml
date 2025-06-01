@@ -5,8 +5,8 @@ modules:
     #source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
       cleanup: false # clean up added repos after module is done
-      #files:
-      #- https://download.docker.com/linux/fedora/docker-ce.repo
+      files:
+      - https://download.docker.com/linux/fedora/docker-ce.repo
 
       copr:
         #- atim/starship
@@ -23,11 +23,11 @@ modules:
       packages:
         # System Utilities
         - blivet-gui
-        # - docker-ce
-        # - docker-ce-cli
-        # - containerd.io
-        # - docker-buildx-plugin
-        # - docker-compose-plugin
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
         - inxi
         - plymouth-plugin-script
         - tailscale
