@@ -12,7 +12,7 @@ modules:
 
       # Docker CE Repository
       yum-repos:
-      - https://download.docker.com/linux/fedora/docker-ce.repo
+        - https://download.docker.com/linux/fedora/docker-ce.repo
 
       # Put any repo GPG keys here
 
