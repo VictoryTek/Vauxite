@@ -104,18 +104,6 @@ Vauxite is built using BlueBuild modules. You can:
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions! Whether it's:
-- 🐛 Bug reports
-- 💡 Feature requests  
-- 📝 Documentation improvements
-- 🔧 Code contributions
-
-Please open an issue or submit a pull request.
-
----
-
 ## 📄 License
 
 This project is licensed under the [LICENSE](LICENSE) - see the file for details.
