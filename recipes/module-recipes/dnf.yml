@@ -4,8 +4,6 @@ modules:
   - type: dnf
     #source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
-      - https://download.docker.com/linux/fedora/docker-ce.repo
-      
       cleanup: false # clean up added repos after module is done
 
       copr:
