@@ -4,11 +4,13 @@ modules:
   - type: dnf
     #source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
-      cleanup: false # clean up added repos after module is done
-
-      copr:
-        - gloriouseggroll/nobara-42
-        - peterwu/rendezvous
+      - https://download.docker.com/linux/fedora/docker-ce.repo
+      
+    copr:
+      - gloriouseggroll/nobara-42
+      - peterwu/rendezvous
+      
+    cleanup: false # clean up added repos after module is done
 
       # Put any repo GPG keys here
 
@@ -22,7 +24,6 @@ modules:
         # System Utilities
         - blivet-gui
         - inxi
-        - nodejs
         - plymouth-plugin-script
         - tailscale
         - trayscale
