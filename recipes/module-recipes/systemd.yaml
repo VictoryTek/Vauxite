@@ -4,5 +4,5 @@ modules:
   - type: systemd
     system:
       enabled:
-        - libvirtd.service
-        - virtlogd.socket
+        - docker.service
+        - containerd.service
