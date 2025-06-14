@@ -24,6 +24,7 @@ modules:
   - from-file: module-recipes/gnome-extensions.yml
   - from-file: module-recipes/icons.yml
   - from-file: module-recipes/starship-config.yml
+  - from-file: module-recipes/systemd.yaml
 #  - type: yafti
   - from-file: module-recipes/bling.yml
   - from-file: module-recipes/fonts.yml
