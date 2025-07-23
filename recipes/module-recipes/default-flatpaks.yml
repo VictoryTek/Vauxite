@@ -17,7 +17,8 @@ system:
     - it.mijorus.gearlever                # Gearlever
     - io.github.shiftey.Desktop           # Github Desktop
     - org.gnome.TextEditor                # Gnome Text Editor
-    - org.gnome.Loupe                     # Image Viewer        
+    - org.gnome.Loupe                     # Image Viewer
+    - io.gitlab.librewolf-community       # LibreWolf Browser
     - io.missioncenter.MissionCenter      # Mission Center
     - org.onlyoffice.desktopeditors       # Only Office
     - dev.overlayed.Overlayed             # Overlayed
@@ -30,7 +31,6 @@ system:
     - com.github.unrud.VideoDownloader    # Video Downloader
     - com.vscodium.codium                 # VS Codium
     - io.github.flattool.Warehouse        # Warehouse
-    - app.zen_browser.zen                 # Zen Browser
 
   remove:
     - org.gnome.eog

@@ -28,7 +28,6 @@ jobs:
         recipe:
           # !! Add your recipes here
           - desktop-gnome-nvidia.yml
-          #- desktop-cosmic-nvidia.yml
 
     steps:
       # the build is fully handled by the reusable github action
