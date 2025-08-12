@@ -6,7 +6,7 @@ name: vauxite-gnome-nvidia
 description: Personal Bazzite image with GNOME desktop and open-source NVIDIA drivers.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
+base-image: ghcr.io/ublue-os/bazzite-gnome
 image-version: stable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
