@@ -27,7 +27,6 @@ system:
     - com.simplenote.Simplenote           # Simplenote
     - dev.deedles.Trayscale               # Tray Scale
     - com.github.unrud.VideoDownloader    # Video Downloader
-    - com.vscodium.codium                 # VS Codium
     - io.github.flattool.Warehouse        # Warehouse
 
   remove:
